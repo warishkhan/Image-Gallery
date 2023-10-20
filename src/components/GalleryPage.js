@@ -5,12 +5,15 @@ import "./GalleryPage.css";
 import Tags from "./Tags";
 import Loading from "./Loading";
 import Cards from "./Cards";
+import PageNotFound from "./PageNotFound";
 
 const GalleryPage = () => {
-  const { images, isLoading, toggle, setToggle } = useGlobalContext();
+  const { images, isLoading, toggle, setToggle,query } = useGlobalContext();
 
   if (isLoading) {
     return <Loading />;
+  }else if(!query || !images.length){
+    return <PageNotFound/>
   }
 
   return (

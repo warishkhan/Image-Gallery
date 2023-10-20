@@ -1,0 +1,62 @@
+.pageNotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-text{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--body_color);
+    opacity: .7;
+    padding: 10px;
+}
+
+.error-text{
+    font-size: 13px;
+    font-weight: bold;
+    opacity: .4;
+    padding-bottom: 10px;
+}
+
+.pageNotFound p:last-child{
+    font-size: 15px;
+    font-weight: bold;
+    opacity: .4;
+}
+
+@media only screen and ((min-width:350px) and (max-width:600px)){
+   .pageNotFound{
+    width: 100%;
+   }
+   .pageNotFound img{
+    width: 100%;
+   }
+   .main-text,.error-text{
+    text-align: center;
+   }
+    }
+@media only screen and ((min-width:600px) and (max-width:768px)){
+   .pageNotFound{
+    width: 100%;
+   }
+   .pageNotFound img{
+    width: 100%;
+   }
+   .main-text,.error-text{
+    text-align: center;
+   }
+    }
+@media only screen and ((min-width:768px) and (max-width:1000px)){
+   .pageNotFound{
+    width: 100%;
+   }
+   .pageNotFound img{
+    width: 100%;
+   }
+   .main-text,.error-text{
+    text-align: center;
+   }
+    }
