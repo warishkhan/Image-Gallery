@@ -1,0 +1,119 @@
+.gallery-container{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 8px;
+    height: auto;
+}
+
+.image-card{
+    width: 450px;
+    height: 330px;
+    border-radius: 5px;
+    position: relative;
+    background-color: var(--body_background);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 10px;
+    color:var(--body_color);
+}
+
+.image-card img{
+    border-radius: 5px 5px 0px 0px;
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.user{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.user-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-social{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: .7;
+}
+
+.user-social p:first-child{
+    font-weight: bold;
+}
+
+.user-likes{
+    font-size: 15px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: .7;
+}
+
+.user-likes span{
+    font-weight: bold;
+    margin-left: 2px;
+    opacity: .7;
+}
+
+@media only screen and ((min-width:350px) and (max-width:600px)){
+    .gallery-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image-card{
+        width: 100%;
+    }
+    .image-card img{
+        width: 100%;
+    }
+}
+
+
+@media only screen and ((min-width:600px) and (max-width:768px)){
+    .gallery-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image-card{
+        width: 100%;
+    }
+    .image-card img{
+        width: 100%;
+    }
+}
+@media only screen and ((min-width:768px) and (max-width:1000px)){
+    .gallery-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .image-card{
+        width: 100%;
+    }
+    .image-card img{
+        width: 100%;
+    }
+}
+
+@media only screen and ((min-width:1000px) and (max-width:1250px)){
+    .image-card{
+        width: 100%;
+    }
+    .image-card img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+.header{
+    width: 93%;
+    margin: auto;
+   margin-top: 15px;
+  
+}
+
+.header p{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+    opacity: .7;
+}
+
+.header-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+   scroll-snap-type: x mandatory;
+}
+
+.header-btn::-webkit-scrollbar{
+    width: 0;
+  }
+
+.header-btn button{
+    margin: 15px;
+    width: 150px;
+    outline: none;
+    font-size: 15px;
+    background-color: rgba(207, 202, 202,0.1);
+    border: 1px solid var(--body_color);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--body_color);
+    opacity: .5;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+@media only screen and ((min-width:350px) and (max-width:600px)){
+    .header-btn{
+        width: 100%;
+    }
+}

@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+:root{
+  --body_background: white;
+  --body_color:black;
+  --link_color:navy;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="dark"]{
+  --body_background: rgb(20, 20, 20);
+  --body_color:white;
+  --link_color:cyan;
 }
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+ background-color: var(--body_background);
+ color: var(--body_color);
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
